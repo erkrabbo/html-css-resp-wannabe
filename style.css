@@ -141,3 +141,82 @@ img {
     margin-top: 0;
   }
 }
+
+
+/* BONUS */
+
+@media screen and (min-width: 421px) and (max-width: 1024PX) {
+
+  /* RESET */
+  *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    box-sizing: border-box;
+  }
+
+  /* BLOCCO LEZIONI */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: calc(50% - 2em); /* forzo il wrap*/
+    margin: 0 1em;
+  }
+
+
+  /* BLOCCO STEPS */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: calc(100% / 3 - 2em); /* forzo il wrap*/
+    margin: 0 1em;
+  }
+
+  /* BLOCCO PERCHE */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 0; /*sovrascrivo valore precedente*/
+
+    border-bottom: 1px solid black;
+  }
+
+  #why .row img{
+    padding: 1em;   /* sovrascrivo i 30px per avere dimensioni corrette*/
+  }
+
+  #lezioni .right> img{
+    max-width: 180px;   /* forzo valori per allineare le prime due immagini*/
+    height: 150px;    
+  }
+
+  #steps .left img{
+    padding-top: 1.5em; /* per evitare che si stretchi troppo*/
+  }
+
+  .container.grey{
+    background-color: white;  /*sovrascrivo colore precedente*/
+  }
+
+  .container:nth-child(odd){     /*coloro sfondi alterni*/
+    background-color:lightyellow;
+  }
+
+  /* COMMON */
+  img {
+    max-height: 150px; /*per sovrascrivere il valore precedente e cerco di far allineare le prime due immagini*/
+    
+    max-width: 50%;
+
+    margin-top: 1rem;
+  }
+
+  .container{
+    padding: 1em;
+  }
+
+  .row {
+    width: 100%; /*per adattare dimensioni allo schermo*/
+    margin-top: 0;
+  }
+}
