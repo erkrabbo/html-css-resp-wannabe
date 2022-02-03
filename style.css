@@ -75,6 +75,7 @@ img {
 
 @media screen and (max-width: 420px) {
 
+  /* RESET */
   *{
     margin: 0;
     padding: 0;
@@ -83,27 +84,10 @@ img {
     box-sizing: border-box;
   }
 
-
-  .row {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  .container{
-    padding: 1rem;
-  }
-
   /* BLOCCO LEZIONI */
   #lezioni .row>.left,
   #lezioni .row>.right {
-    width: 100%;
-  }
-
-
-  img {
-    height: auto;
-    width: 20%;
-    margin-top: 1rem;
+    width: 100%; /* forzo il wrap*/
   }
 
 
@@ -111,15 +95,49 @@ img {
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
-    display: block;
-    width: 100%;
+    width: 100%; /* forzo il wrap*/
+  }
+
+  /* BLOCCO PERCHE */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 0;
+
+    border-bottom: 1px solid black;
+  }
+
+  #why .row img{
+    padding: 1em;   /* sovrascrivo i 30px per avere dimensioni corrette*/
+  }
+
+  #lezioni .right> img{
+    width: 30%;     
   }
 
   .container.grey{
-    background-color: white;
+    background-color: white;  /*sovrascrivo colore precedente*/
   }
 
-  .container:nth-child(odd){
+  .container:nth-child(odd){     /*coloro sfondi alterni*/
     background-color: #f2f2cd;
+  }
+
+  /* COMMON */
+  img {
+    height: auto; /*per sovrascrivere il valore precedente*/
+    width: 20%;
+    margin-top: 1rem;
+  }
+
+  .container{
+    padding: 1em;
+
+    font-size: 12px;
+  }
+
+  .row {
+    width: 100%; /*per adattare dimensioni allo schermo*/
+    margin-top: 0;
   }
 }
