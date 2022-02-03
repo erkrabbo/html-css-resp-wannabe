@@ -74,16 +74,30 @@ img {
 
 
 @media screen and (max-width: 420px) {
+
+
+  body{
+    margin: 0;
+  }
+  h1{
+    margin-top: 0;
+  }
   .row {
     width: 100%;
     margin-top: 0;
   }
 
+  .container{
+    padding: 1rem;
+  }
+
+  /* BLOCCO LEZIONI */
   #lezioni .row>.left,
   #lezioni .row>.right {
     width: 100%;
     display: block;
   }
+
 
   img {
     height: auto;
@@ -91,7 +105,7 @@ img {
   }
 
 
-
+  /* BLOCCO STEPS */
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
@@ -99,4 +113,11 @@ img {
     width: 100%;
   }
 
+  .container.grey{
+    background-color: white;
+  }
+
+  .container:nth-child(odd){
+    background-color: #f2f2cd;
+  }
 }
