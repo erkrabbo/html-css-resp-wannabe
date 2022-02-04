@@ -79,9 +79,6 @@ img {
   *{
     margin: 0;
     padding: 0;
-    border: 0;
-
-    box-sizing: border-box;
   }
 
   /* BLOCCO LEZIONI */
@@ -103,16 +100,15 @@ img {
   #why .row>.second,
   #why .row>.third {
     margin-top: 0; /*sovrascrivo valore precedente*/
-
-    border-bottom: 1px solid black;
   }
 
   #why .row img{
-    padding: 1em;   /* sovrascrivo i 30px per avere dimensioni corrette*/
+    padding: 1em; 
+    width: 20%;  /* sovrascrivo i 30px per avere dimensioni corrette*/
   }
 
   #lezioni .right> img{
-    width: 30%;     
+    width: 45%;     
   }
 
   .container.grey{
@@ -126,7 +122,7 @@ img {
   /* COMMON */
   img {
     height: auto; /*per sovrascrivere il valore precedente*/
-    width: 20%;
+    width: 30%;
     margin-top: 1rem;
   }
 
@@ -151,9 +147,6 @@ img {
   *{
     margin: 0;
     padding: 0;
-    border: 0;
-
-    box-sizing: border-box;
   }
 
   /* BLOCCO LEZIONI */
@@ -177,21 +170,21 @@ img {
   #why .row>.second,
   #why .row>.third {
     margin-top: 0; /*sovrascrivo valore precedente*/
-
-    border-bottom: 1px solid black;
   }
 
   #why .row img{
     padding: 1em;   /* sovrascrivo i 30px per avere dimensioni corrette*/
+    /* width: 30%; */
   }
 
   #lezioni .right> img{
-    max-width: 180px;   /* forzo valori per allineare le prime due immagini*/
-    height: 150px;    
+    /* max-width: 180px;   forzo valori per allineare le prime due immagini */
+    /* height: 150px;     */
   }
 
   #steps .left img{
-    padding-top: 1.5em; /* per evitare che si stretchi troppo*/
+    /* padding-top: 1.5em;  */
+    /* max-width: 90%; */
   }
 
   .container.grey{
@@ -204,10 +197,10 @@ img {
 
   /* COMMON */
   img {
-    max-height: 150px; /*per sovrascrivere il valore precedente e cerco di far allineare le prime due immagini*/
+    /* max-height: 150px; per sovrascrivere il valore precedente e cerco di far allineare le prime due immagini */
     
-    max-width: 50%;
-
+    max-width: 100%;
+    max-height: 150px;
     margin-top: 1rem;
   }
 
